@@ -12,17 +12,19 @@ const Form = (props) => {
   return (
     <div>
       <h1>ToDo List</h1>
-      <form className="" onSubmit={submitHandler}>
-        <input
-          type="text"
-          ref={inputRef}
-          placeholder="New Task"
-          className={classes.form}
-        ></input>
-        <button className="ms-4 btn btn-info" type="submit">
-          Add
-        </button>
-      </form>
+      <div>
+        <form className="d-flex flex-row" onSubmit={submitHandler}>
+          <input
+            type="text"
+            ref={inputRef}
+            placeholder="New Task"
+            className="form-control"
+          />
+          <button className="ms-4 btn btn-info" type="submit">
+            Add
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

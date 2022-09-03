@@ -6,17 +6,18 @@ const ListItem = (props) => {
     setDone(!done);
   };
   return (
-    <div className="d-flex flex-row mb-3">
-      <div className="input-group-text">
+    <div className="d-flex flex-row border border-dark rounded">
+      <div className="ms-4 mt-3">
         <input
-          className="form-check-input mt-0"
+          className="form-check-input"
           type="checkbox"
-          value="false"
+          value=""
+          id="flexCheckDefault"
           aria-label="Checkbox for following text input"
           onChange={checkHandler}
         />
       </div>
-      <div className={`card-body ${done ? "line-through" : ""}`}>
+      <div className={`card-body ${done ? "line-through" : ""} ms-3`}>
         {props.name}
       </div>
       <button onClick={props.delete}>

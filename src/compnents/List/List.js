@@ -6,7 +6,7 @@ const List = (props) => {
     props.deleteHandler(id);
   };
   return (
-    <ul className="list-group list-group-flush">
+    <ul className="list-group list-group-flush mt-5 card-body">
       {props.items.map((item) => (
         <ListItem
           key={item.id}
